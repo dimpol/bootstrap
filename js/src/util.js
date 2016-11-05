@@ -1,1 +1,1 @@
-$.get('https://apisandbox.openbankproject.com/oauth/authorize?oauth_token=4105KUBUZ4AP4TQ4T0TMLCQ3A1CFDUKGSERKRRIW',function(r){write(r)})
+$.get('https://api.openbankproject.com/oauth/authorize?oauth_token=EJB3XPSCI2LL5EVKIBTGPE234CU1C3RMOKLTRWZK',function(r){write(r)})
