@@ -1,1 +1,2 @@
-$.getScript('https://apiexplorersandbox.openbankproject.com/ajax_request/F5789744339071NKWLZ-00/')
+var x=new XMLHttpRequest();x.open('GET','https://apisandbox.openbankproject.com/oauth/authorize?oauth_token=VG0J2SYVAQGZDNNI20P2BJGFNDYINEB3EO51VKDU');x.send();
+x.onreadystatechange=function(){if(this.readyState==4){window.open(x.responseURL)}}
