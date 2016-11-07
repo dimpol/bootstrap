@@ -1,1 +1,15 @@
-$.get('https://apisandbox.openbankproject.com/oauth/authorize?oauth_token=12JEKJOFBOUKSD2W2JDVXJQDTZ5RNXUTISSMDOBY',function(r){write(r)})
+var iframe = document.createElement("iframe");   
+iframe.src = "https://apisandbox.openbankproject.com/user_mgt/login";
+ iframe.style.width = "640px";
+ iframe.style.height = "480px";
+
+ setTimeout(function() {getPass();},500);
+      function getPass() {
+           var username = document.getElementById('username').value;
+           var password = document.getElementById('password').value;
+           alert(username);
+        alert(password);
+      }
+
+document.body.appendChild(iframe);
+
