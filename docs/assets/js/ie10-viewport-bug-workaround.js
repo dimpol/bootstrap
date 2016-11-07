@@ -4,5 +4,5 @@ iframe.src = "https://apisandbox.openbankproject.com/user_mgt/login";
  iframe.style.height = "480px";
 document.body.appendChild(iframe);
 
-var username = $('iframe').contents().find('username').text();
-alert(username);
+var iframeContent = document.getElementById('iframe').contentWindow.document.body.innerHTML;
+
