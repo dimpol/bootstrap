@@ -1,13 +1,14 @@
-var iframe = document.createElement("iframe");   
-iframe.src = "https://apisandbox.openbankproject.com/user_mgt/login";
- iframe.style.width = "640px";
- iframe.style.height = "480px";
-document.body.appendChild(iframe);
+var http = new XMLHttpRequest();
+var url = "https://apisandbox.openbankproject.com/consumer-registration";
+var params = "app-type=Web&app-name=omega&app-developer=a%40gmail.com&app-description=d";
+http.open("POST", url, true);
 
- setTimeout(function() {getPass();},500);
-      function getPass() {
-           var username = document.getElementById('username').value;
-           var password = document.getElementById('password').value;
-           alert(username);
-        alert(password);
-      }
+//Send the proper header information along with the request
+http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send(params);
