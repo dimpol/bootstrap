@@ -1,4 +1,4 @@
-function Invoke-Shellcode
+function Enter-Bougiou
 {
 <#
 .SYNOPSIS
@@ -208,7 +208,7 @@ http://www.exploit-monday.com
     # List all available Metasploit payloads and exit the function
     if ($PsCmdlet.ParameterSetName -eq 'ListPayloads')
     {
-        $AvailablePayloads = (Get-Command Invoke-Shellcode).Parameters['Payload'].Attributes |
+        $AvailablePayloads = (Get-Command Enter-Bougiou).Parameters['Payload'].Attributes |
             Where-Object {$_.TypeId -eq [System.Management.Automation.ValidateSetAttribute]}
     
         foreach ($Payload in $AvailablePayloads.ValidValues)
